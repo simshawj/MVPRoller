@@ -74,4 +74,10 @@ public class DieTest {
         assertThat(die3.hashCode(), equalTo(die1.hashCode()));
     }
 
+    @Test
+    public void testGetSides() {
+        Die die = new Die(20);
+        assertEquals(20, die.getSides());
+    }
+
 }
