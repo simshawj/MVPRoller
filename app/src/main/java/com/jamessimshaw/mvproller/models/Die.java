@@ -21,4 +21,14 @@ public class Die {
         Random random = new Random();
         return random.nextInt(mSides) + 1;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        return o instanceof Die && mSides == ((Die) o).mSides;
+    }
+
+    @Override
+    public int hashCode() {
+        return mSides;
+    }
 }
