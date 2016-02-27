@@ -18,8 +18,12 @@ public class Die {
     }
 
     public int roll() {
+        return roll(mSides);
+    }
+
+    public static int roll(int sides) {
         Random random = new Random();
-        return random.nextInt(mSides) + 1;
+        return random.nextInt(sides) + 1;
     }
 
     @Override

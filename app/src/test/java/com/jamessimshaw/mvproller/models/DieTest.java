@@ -23,12 +23,33 @@ public class DieTest {
     }
 
     @Test
+    public void testStaticOneSidedDieShouldOnlyReturnOneOnRoll() {
+        boolean result = true;
+        for(int i = 0; i < 100; i++) {
+            if (Die.roll(1) != 1)
+                result = false;
+        }
+        assertTrue(result);
+    }
+
+    @Test
     public void testMultisidedDieShouldHaveDifferentResultsOnRoll() {
         Die die = new Die(100);
         int prev = die.roll();
         boolean result = false;
         for(int i = 0; i < 100; i++) {
             if (die.roll() != prev)
+                result = true;
+        }
+        assertTrue(result);
+    }
+
+    @Test
+    public void testStaticMultisidedDieShouldHaveDifferentResultsOnRoll() {
+        int prev = Die.roll(100);
+        boolean result = false;
+        for(int i = 0; i < 100; i++) {
+            if (Die.roll(100) != prev)
                 result = true;
         }
         assertTrue(result);
@@ -79,5 +100,6 @@ public class DieTest {
         Die die = new Die(20);
         assertEquals(20, die.getSides());
     }
+
 
 }
