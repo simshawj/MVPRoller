@@ -38,4 +38,8 @@ public class DiceSet {
         }
         return sum;
     }
+
+    public void setNumDice(int sides, int count) {
+        mDice.put(sides, count);
+    }
 }

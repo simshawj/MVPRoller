@@ -50,4 +50,10 @@ public class DiceSetTest {
         mDiceSet.add(20);
         assertThat(mDiceSet.rollAllDice(), greaterThanOrEqualTo(7));
     }
+
+    @Test
+    public void testSetNumDice() {
+        mDiceSet.setNumDice(20, 2);
+        assertEquals(2, mDiceSet.getDieCount(20));
+    }
 }
