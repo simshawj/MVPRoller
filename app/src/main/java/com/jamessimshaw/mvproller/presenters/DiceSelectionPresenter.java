@@ -1,5 +1,7 @@
 package com.jamessimshaw.mvproller.presenters;
 
+import com.jamessimshaw.mvproller.views.DiceSelectionView;
+
 /**
  * Created by james on 2/26/16.
  */
@@ -31,4 +33,7 @@ public interface DiceSelectionPresenter {
     void onD100AdditionClicked();
     void onD100CountSet(int count);
     void onD100RemovalClicked();
+
+    void setView(DiceSelectionView view);
+    void removeView(DiceSelectionView view);
 }
