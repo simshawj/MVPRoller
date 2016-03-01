@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!--
+    TODO: Verify behavior for LTR and RTL devices and determine if I want a difference
+    -->
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/d4DieTypeImageView"
+        android:src="@android:drawable/sym_def_app_icon"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="3dp"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/d4RemoveDieImageView"
+        android:src="@android:drawable/arrow_down_float"
+        android:layout_below="@id/d4DieTypeImageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="3dp"/>
+
+    <EditText
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:id="@+id/d4DieCountEditText"
+        android:text="0"
+        android:layout_alignBottom="@id/d4RemoveDieImageView"
+        android:layout_toRightOf="@id/d4RemoveDieImageView"
+        android:layout_toEndOf="@id/d4RemoveDieImageView"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/d4AddDieImageView"
+        android:src="@android:drawable/arrow_up_float"
+        android:layout_below="@id/d4DieTypeImageView"
+        android:layout_toRightOf="@id/d4DieCountEditText"
+        android:layout_toEndOf="@id/d4DieCountEditText"/>
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/d6DieTypeImageView"
+        android:src="@android:drawable/sym_def_app_icon"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/d6removeDieImageView"
+        android:src="@android:drawable/arrow_down_float"
+        android:layout_below="@id/d6DieTypeImageView"
+        android:layout_alignLeft="@id/d6DieTypeImageView"/>
+
+    <EditText
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:id="@+id/d6DieCountEditText"
+        android:text="0"
+        android:layout_alignBottom="@id/d6removeDieImageView"
+        android:layout_toRightOf="@id/d6removeDieImageView"
+        android:layout_toEndOf="@id/d6removeDieImageView"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/d6AddDieImageView"
+        android:src="@android:drawable/arrow_up_float"
+        android:layout_below="@id/d6DieTypeImageView"
+        android:layout_toRightOf="@id/d6DieCountEditText"
+        android:layout_toEndOf="@id/d6DieCountEditText"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/d8DieTypeImageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@android:drawable/sym_def_app_icon"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="3dp"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/d8RemoveDieImageView"
+        android:src="@android:drawable/arrow_down_float"
+        android:layout_below="@id/d8DieTypeImageView"
+        android:layout_alignLeft="@id/d8DieTypeImageView"/>
+
+    <EditText
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:id="@+id/d8DieCountEditText"
+        android:text="0"
+        android:layout_alignBottom="@id/d8RemoveDieImageView"
+        android:layout_toRightOf="@id/d8RemoveDieImageView"
+        android:layout_toEndOf="@id/d8RemoveDieImageView"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/d8AddDieImageView"
+        android:src="@android:drawable/arrow_up_float"
+        android:layout_below="@id/d8DieTypeImageView"
+        android:layout_toRightOf="@id/d8DieCountEditText"
+        android:layout_toEndOf="@id/d8DieCountEditText"
+        android:layout_marginRight="3dp"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/d10DieTypeImageView"
+        android:layout_below="@id/d4AddDieImageView"
+        android:layout_alignParentLeft="true"
+        android:src="@android:drawable/sym_def_app_icon"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="3dp"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/d10RemoveDieImageView"
+        android:src="@android:drawable/arrow_down_float"
+        android:layout_below="@id/d10DieTypeImageView"
+        android:layout_alignLeft="@id/d10DieTypeImageView"
+        android:layout_marginLeft="3dp"/>
+
+    <EditText
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:id="@+id/d10DieCountEditText"
+        android:text="0"
+        android:layout_alignBottom="@id/d10RemoveDieImageView"
+        android:layout_toRightOf="@id/d10RemoveDieImageView"
+        android:layout_toEndOf="@id/d10RemoveDieImageView"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/d10AddDieImageView"
+        android:src="@android:drawable/arrow_up_float"
+        android:layout_below="@id/d10DieTypeImageView"
+        android:layout_toRightOf="@id/d10DieCountEditText"
+        android:layout_toEndOf="@id/d10DieCountEditText"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/d12DieTypeImageView"
+        android:layout_below="@id/d6AddDieImageView"
+        android:layout_centerHorizontal="true"
+        android:src="@android:drawable/sym_def_app_icon"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/d12RemoveDieImageView"
+        android:src="@android:drawable/arrow_down_float"
+        android:layout_below="@id/d12DieTypeImageView"
+        android:layout_alignLeft="@id/d12DieTypeImageView"/>
+
+    <EditText
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:id="@+id/d12DieCountEditText"
+        android:text="0"
+        android:layout_alignBottom="@id/d12RemoveDieImageView"
+        android:layout_toRightOf="@id/d12RemoveDieImageView"
+        android:layout_toEndOf="@id/d12RemoveDieImageView"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/d12AddDieImageView"
+        android:src="@android:drawable/arrow_up_float"
+        android:layout_below="@id/d12DieTypeImageView"
+        android:layout_toRightOf="@id/d12DieCountEditText"
+        android:layout_toEndOf="@id/d12DieCountEditText"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/d20DieTypeImageView"
+        android:layout_below="@id/d8AddDieImageView"
+        android:layout_alignParentRight="true"
+        android:src="@android:drawable/sym_def_app_icon"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="3dp"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/d20RemoveDieImageView"
+        android:src="@android:drawable/arrow_down_float"
+        android:layout_below="@id/d20DieTypeImageView"
+        android:layout_alignLeft="@id/d20DieTypeImageView"/>
+
+    <EditText
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:id="@+id/d20DieCountEditText"
+        android:text="0"
+        android:layout_alignBottom="@id/d20RemoveDieImageView"
+        android:layout_toRightOf="@id/d20RemoveDieImageView"
+        android:layout_toEndOf="@id/d20RemoveDieImageView"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/d20AddDieImageView"
+        android:src="@android:drawable/arrow_up_float"
+        android:layout_below="@id/d20DieTypeImageView"
+        android:layout_toRightOf="@id/d20DieCountEditText"
+        android:layout_toEndOf="@id/d20DieCountEditText"
+        android:layout_marginRight="3dp"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/d100DieTypeImageView"
+        android:layout_below="@id/d12AddDieImageView"
+        android:layout_centerHorizontal="true"
+        android:src="@android:drawable/sym_def_app_icon"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/d100RemoveDieImageView"
+        android:src="@android:drawable/arrow_down_float"
+        android:layout_below="@id/d100DieTypeImageView"
+        android:layout_alignLeft="@id/d100DieTypeImageView"/>
+
+    <EditText
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:id="@+id/d100DieCountEditText"
+        android:text="0"
+        android:layout_alignBottom="@id/d100RemoveDieImageView"
+        android:layout_toRightOf="@id/d100RemoveDieImageView"
+        android:layout_toEndOf="@id/d100RemoveDieImageView"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/d100AddDieImageView"
+        android:src="@android:drawable/arrow_up_float"
+        android:layout_below="@id/d100DieTypeImageView"
+        android:layout_toRightOf="@id/d100DieCountEditText"
+        android:layout_toEndOf="@id/d100DieCountEditText"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Roll"/>
+
+</RelativeLayout>
