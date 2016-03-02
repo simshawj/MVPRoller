@@ -36,4 +36,6 @@ public interface DiceSelectionPresenter {
 
     void setView(DiceSelectionView view);
     void removeView(DiceSelectionView view);
+
+    void rollSelected();
 }
