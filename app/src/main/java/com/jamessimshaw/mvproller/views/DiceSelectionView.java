@@ -17,4 +17,8 @@ public interface DiceSelectionView {
     void updateD20Number(int number);
 
     void updateD100Number(int number);
+
+    void animateRoll();
+
+    void displayResult(int roll);
 }
