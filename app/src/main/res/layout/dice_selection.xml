@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools"
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
@@ -59,7 +60,7 @@
     <ImageView
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:id="@+id/d6removeDieImageView"
+        android:id="@+id/d6RemoveDieImageView"
         android:src="@android:drawable/arrow_down_float"
         android:layout_below="@id/d6DieTypeImageView"
         android:layout_alignLeft="@id/d6DieTypeImageView"/>
@@ -73,9 +74,9 @@
         android:background="@android:color/transparent"
         android:id="@+id/d6DieCountEditText"
         android:text="0"
-        android:layout_alignBottom="@id/d6removeDieImageView"
-        android:layout_toRightOf="@id/d6removeDieImageView"
-        android:layout_toEndOf="@id/d6removeDieImageView"/>
+        android:layout_alignBottom="@id/d6RemoveDieImageView"
+        android:layout_toRightOf="@id/d6RemoveDieImageView"
+        android:layout_toEndOf="@id/d6RemoveDieImageView"/>
 
     <ImageView
         android:layout_width="30dp"
@@ -253,7 +254,7 @@
         android:layout_height="100dp"
         android:id="@+id/d100DieTypeImageView"
         android:layout_below="@id/d12AddDieImageView"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
         android:src="@android:drawable/sym_def_app_icon"
         android:layout_marginTop="10dp"/>
 
@@ -287,11 +288,24 @@
         android:layout_toRightOf="@id/d100DieCountEditText"
         android:layout_toEndOf="@id/d100DieCountEditText"/>
 
+    <TextView
+        android:id="@+id/resultTextView"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        tools:text="200"
+        android:layout_toRightOf="@id/d100DieTypeImageView"
+        android:layout_marginLeft="20dp"
+        android:layout_alignBottom="@id/d100AddDieImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="100sp"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:id="@+id/rollButton"
         android:text="Roll"/>
 
 </RelativeLayout>
