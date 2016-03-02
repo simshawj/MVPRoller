@@ -23,7 +23,8 @@ public class DiceSelectionPresenterImplTest {
     public void setup() {
         mView = mock(DiceSelectionView.class);
 
-        mPresenter = new DiceSelectionPresenterImpl(mView);
+        mPresenter = new DiceSelectionPresenterImpl();
+        mPresenter.setView(mView);
     }
 
     @Test
