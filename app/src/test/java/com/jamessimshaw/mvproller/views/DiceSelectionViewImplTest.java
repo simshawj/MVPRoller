@@ -3,27 +3,30 @@ package com.jamessimshaw.mvproller.views;
 import android.view.LayoutInflater;
 import android.widget.TextView;
 
+import com.jamessimshaw.mvproller.BuildConfig;
 import com.jamessimshaw.mvproller.R;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.robolectric.RobolectricTestRunner;
+import org.robolectric.RobolectricGradleTestRunner;
 import org.robolectric.RuntimeEnvironment;
+import org.robolectric.annotation.Config;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by james on 3/3/16.
  */
-@RunWith(RobolectricTestRunner.class)
+@RunWith(RobolectricGradleTestRunner.class)
+@Config(constants = BuildConfig.class, sdk = 21)
 public class DiceSelectionViewImplTest {
 
     DiceSelectionViewImpl mView;
 
     @Before
     public void setup() {
-        mView = (DiceSelectionViewImpl) LayoutInflater.from(RuntimeEnvironment.application).inflate(R.layout.dice_selection, null);
+        mView = (DiceSelectionViewImpl) LayoutInflater.from(RuntimeEnvironment.application).inflate(R.layout.dice_selection, new DiceSelectionViewImpl(RuntimeEnvironment.application), true);
     }
 
     @Test
