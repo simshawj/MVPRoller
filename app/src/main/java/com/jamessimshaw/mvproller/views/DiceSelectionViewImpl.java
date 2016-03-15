@@ -2,7 +2,6 @@ package com.jamessimshaw.mvproller.views;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -87,6 +86,7 @@ public class DiceSelectionViewImpl extends RelativeLayout implements DiceSelecti
                 .build().inject(this);
         inflate(context, R.layout.dice_selection, this);
         ButterKnife.bind(this);
+        mDontMonitor = false;
     }
 
     // DiceSelectionView Methods
